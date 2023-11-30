@@ -2,6 +2,7 @@ const sliderLabels = [
   {first:"Instalacje",second:"elektryczne"},
   {first:"Instalacje",second:"Odgromowe"},
   {first:"Monitoring",second:"CCTV"},
+  {first:"Instalacje",second:"SAT"},
 ]
 
 const swiper = document.querySelector('.mySwiper');
@@ -18,23 +19,23 @@ const heroSwiper = new Swiper(swiper, {
   },
   autoplay: {
     enabled: true,
-    delay: 3000,
+    delay: 5000,
   },
 });
 
 heroSwiper.on('slideChange', function (e) {
-  console.log('Slide changed to: ' + heroSwiper.activeIndex);
+    changeText(sliderLabels[heroSwiper.realIndex].first,sliderLabels[heroSwiper.realIndex].second)
 });
 
 const changeText = (first, second) => {
-    t1 = document.querySelector(".hero-header__first");
-    t2 = document.querySelector(".hero-header__second");
+    const t1 = document.querySelector(".hero-header__first");
+    const t2 = document.querySelector(".hero-header__second");
 
-    header = document.querySelector(".hero-header");
-
+    const header = document.querySelector(".hero-header");
+    
     t1.innerHTML = first;
     t2.innerHTML = second;
 
     header.classList.remove("animate");
-    setTimeout(() => { header.classList.add("animate"); }, 1);
+    setTimeout(() => { header.classList.add("animate"); }, 10);
 }
