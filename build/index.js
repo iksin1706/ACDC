@@ -8,7 +8,7 @@ const sliderLabels = [
 const swiper = document.querySelector('.mySwiper');
 const heroSwiper = new Swiper(swiper, {
   direction: 'horizontal',
-  speed: '500',
+  speed: '1000',
   loop: 'true',
   pagination: {
     el: '.swiper-pagination',
@@ -19,7 +19,7 @@ const heroSwiper = new Swiper(swiper, {
   },
   autoplay: {
     enabled: true,
-    delay: 5000,
+    delay: 3500,
   },
 });
 

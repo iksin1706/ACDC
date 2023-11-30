@@ -65,7 +65,7 @@
         </nav>
     </header>
 
-    <section class="relative h-[90%]">
+    <section class="relative h-[90%] z-30">
         <h1 class="hero-header absolute z-30 bottom-32  mx-4 lg:mx-32 lg:text-7xl text-5xl text-white">
             <span class="hero-header__first  tracking-widest">Instalacje</span><br>
             <span class="hero-header__second">Elektryczne</span>
@@ -73,7 +73,7 @@
 
         <div class="swiper mySwiper h-full">
             <div
-                class="w-full h-full absolute opacity-70 z-10 bg-gradient-to-r from-black bg-indigo-950 pointer-events-none">
+                class="w-full h-full absolute opacity-70 z-30 bg-gradient-to-r from-black bg-indigo-950 pointer-events-none">
             </div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="img/cctv.jpg" alt="" srcset=""></div>
@@ -84,7 +84,7 @@
             <div class="swiper-pagination mb-20 z-50"></div>
         </div>
         <div
-            class="absolute h-32 w-full  bg-slate-900 -bottom-16 z-20  m-auto left-0 right-0 p-3 lg:rounded-2xl  flex lg:w-1/2 justify-evenly gap-10 items-center">
+            class="absolute h-32 w-full  bg-slate-900 -bottom-16 z-30  m-auto left-0 right-0 p-3 lg:rounded-2xl  flex lg:w-1/2 justify-evenly gap-10 items-center">
             <div class="text-center text-white"> <span class="text-orange-500 lg:text-4xl text-2xl font-semibold">150
                     <br></span><span class="text-white font-bold text-sm lg:text-base">Wykonanych zlecen</span></div>
             <div class="text-center text-white"> <span class="text-orange-500 lg:text-4xl text-2xl font-semibold">150
@@ -93,8 +93,9 @@
                     <br></span><span class="text-white font-bold text-sm lg:text-base ">Wykonanych zlecen</span></div>
         </div>
     </section>
-    <section class="relative ">
-        <svg class="light-svg" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 10;"
+    <section class="relative z-20">
+        <svg class="light-svg z-20"
+            style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 10;"
             xmlns="http://www.w3.org/2000/svg" width="168" height="321" viewBox="0 0 168 321" fill="none">
             <path d="M87.0841 4C199.603 109.539 62.1878 102.771 87.0841 164" stroke="#747171" stroke-width="10" />
             <g clip-path="url(#clip0_180_47)">
@@ -141,17 +142,41 @@
             </defs>
         </svg>
         <svg xmlns="http://www.w3.org/2000/svg"
-            class="absolute w-full lg:w-1/2 z-10 -translate-y-56 left-1/2 -translate-x-1/2" width="3001" height="1285"
+            class="absolute w-full lg:w-1/2 z-20 -translate-y-56 left-1/2 -translate-x-1/2" width="3001" height="1285"
             viewBox="0 0 3001 1285" fill="none">
             <path class="st0" xmlns="http://www.w3.org/2000/svg"
                 d="M10 690.5C576.5 1692.5 1342.5 1662 1634.5 1662C1952.5 1662 2906.89 1503.23 2742 750.5C2653.5 346.5 2336.5 149.5 1608.5 10"
-                 stroke-linecap="round" />
+                stroke-linecap="round" />
         </svg>
     </section>
-    <div class="light-gradient"></div>
-    <div class="flex">
-        <div></div>
-        <div></div>
+    <div class="light-gradient z-10"></div>
+    <div class="flex justify-around z-0 px-6 lg:px-32 py-48 flex-wrap">
+        <div>
+            <h2
+                class="text-gray-700 text-4xl relative after:absolute after:w-10 after:h-1 after:left-0 after:-bottom-2 after:bg-orange-500 mb-10">
+                O nas
+            </h2>
+            <div class="text-gray-700 max-w-lg">
+                <p class="mb-3">
+                    Jesteśmy dynamicznym zespołem specjalistów ds. elektromontażu, skupionym na dostarczaniu wysokiej
+                    jakości usług.
+                </p>
+                <p class="mb-3">
+                    Nasza firma jest zbudowana na pasji do elektrotechniki i zaangażowaniu w dostarczanie rozwiązań
+                    dopasowanych do potrzeb naszych klientów. Dzięki naszemu doświadczeniu i wiedzy, oferujemy
+                    kompleksowe usługi elektryczne, dbając o każdy projekt indywidualnie.
+                </p>
+                <p class="mb-3">
+                    Nasze podejście opiera się na elastyczności i dogłębnym zrozumieniu oczekiwań klienta. Dążymy do
+                    dostarczania nie tylko usług, ale również satysfakcji i zaufania w relacji z każdym zleceniodawcą.
+                </p>
+                <p class="mb-3">
+                    Zapraszamy Cię do poznania naszego zespołu oraz naszego podejścia do elektromontażu. Razem możemy
+                    stworzyć efektywne i sprawdzone rozwiązania, które spełnią Twoje oczekiwania.
+                </p>
+            </div>
+        </div>
+        <div class="rounded-3xl overflow-hidden"><img src="img/about.png" alt=""></div>
     </div>
     </section>
 

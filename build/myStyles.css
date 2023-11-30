@@ -73,6 +73,12 @@ body,html{
 .animate>.hero-header__second::after{
   animation: slide-left 1s ease-out forwards;
 }
+.reverse>.hero-header__first::after{
+  animation: slide-right 1s ease-out forwards;
+}
+.reverse>.hero-header__second::after{
+  animation: slide-left 1s ease-out forwards;
+}
 
 
 @keyframes reveal{
@@ -119,7 +125,7 @@ body,html{
 
   to {
       background-size: 20000% 20000%;
-
+      opacity: 0;
   }
 
 }
@@ -154,6 +160,8 @@ body,html{
 .light-svg {
   display: block;
   position: relative;
+  animation: move-up forwards 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); forwards;
+  animation-delay: 2s;
 }
 .light-svg::after {
   content: "";
@@ -176,6 +184,12 @@ body,html{
   filter: drop-shadow(0px 0px 100px #ffe500);
 }
 
+@keyframes move-up {
+  to {
+      transform: translateY(-75px) translateX(-50%);
+  }
+
+}
 @keyframes dash-animation {
   from {
       stroke-dashoffset: 1000;
@@ -193,11 +207,14 @@ body,html{
   to {
       fill: #ffe500;
       filter: drop-shadow(0px 0px 5px #ffff00);
+      z-index: 0;
   }
 }
 @keyframes light-animation2 {
   to {
       fill: #ffa600;
       filter: drop-shadow(0px 0px 10px #ff0000);
+      
   }
 }
+
