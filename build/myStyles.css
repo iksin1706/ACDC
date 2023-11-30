@@ -112,3 +112,92 @@ body,html{
   }
 }
 
+@keyframes gradient-animation {
+  from {
+      background-size: 100% 100%;
+  }
+
+  to {
+      background-size: 20000% 20000%;
+
+  }
+
+}
+
+.light-gradient {
+  background-image: radial-gradient(circle at 50% 50%, #ffffff07 0%, #202020 1%);
+  width: 100%;
+  height: 200vh;
+  transform: translateY(-42%);
+  position: absolute;
+  background-position: 50% 50%;
+  animation: gradient-animation 1s ease-in forwards;
+  animation-delay: 2s;
+}
+
+.light {
+  fill: rgba(170, 170, 170, 0.164);
+  animation: light-animation 1s linear forwards;
+  animation-delay: 2s;
+}        
+.light2 {
+  fill: transparent;
+  animation: light-animation 1s linear forwards;
+  animation-delay: 2s;
+}
+.light3 {
+  fill: #aaa;
+  animation: light-animation2 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.light-svg {
+  display: block;
+  position: relative;
+}
+.light-svg::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 400px;
+  background-image: radial-gradient(circle at 50% 50%, #ffff0099, #ffffff00);
+}
+
+.st0 {
+  fill: none;
+  stroke: #ffe500;
+  stroke-width: 20;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 250 6000;
+  stroke-dashoffset: 0;
+  animation: dash-animation 2.2s linear reverse forwards;
+  filter: drop-shadow(0px 0px 100px #ffe500);
+}
+
+@keyframes dash-animation {
+  from {
+      stroke-dashoffset: 1000;
+      opacity: 1;
+  }
+
+  to {
+      stroke-dashoffset: 8000;
+      opacity: 0.5;
+  }
+
+}
+
+@keyframes light-animation {
+  to {
+      fill: #ffe500;
+      filter: drop-shadow(0px 0px 5px #ffff00);
+  }
+}
+@keyframes light-animation2 {
+  to {
+      fill: #ffa600;
+      filter: drop-shadow(0px 0px 10px #ff0000);
+  }
+}
