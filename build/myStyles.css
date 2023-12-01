@@ -16,6 +16,8 @@
 }
 .swiper-pagination-bullet-active {
   width: 40px !important;
+}
+.swiper-pagination-bullet {
   border-radius: 5px !important;
   transition: 0.5s !important;
 }
