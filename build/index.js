@@ -1,3 +1,19 @@
+tailwind.config = {
+  theme: {
+    extend: {
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }                    
+    },
+  },
+}
+
 const sliderLabels = [
   {first:"Instalacje",second:"elektryczne"},
   {first:"Instalacje",second:"Odgromowe"},
@@ -36,6 +52,31 @@ const changeText = (first, second) => {
     t1.innerHTML = first;
     t2.innerHTML = second;
 
-    header.classList.remove("animate");
-    setTimeout(() => { header.classList.add("animate"); }, 10);
+    header.classList.add("animate");
+    setTimeout(() => { header.classList.remove("animate"); }, 4500);
 }
+
+var serviceSwiper = new Swiper(".service-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  //centeredSlides: true,
+  //freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3.5,
+      spaceBetween: 40,
+    },
+    1284: {
+      slidesPerView: 4.5,
+      spaceBetween: 50,
+    },
+  },
+});

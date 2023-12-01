@@ -14,7 +14,7 @@
     <!-- Demo styles -->
 </head>
 
-<body>
+<body class="bg-orange-50">
     <header class="absolute z-40 w-full">
         <nav class=" border-gray-200 px-4 lg:px-32 py-5 bg-gradient-to-l">
             <div class="flex flex-wrap justify-between items-center">
@@ -76,10 +76,10 @@
                 class="w-full h-full absolute opacity-70 z-30 bg-gradient-to-r from-black bg-indigo-950 pointer-events-none">
             </div>
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/cctv.jpg" alt="" srcset=""></div>
-                <div class="swiper-slide"><img src="img/opinions.jpg" alt="" srcset=""></div>
-                <div class="swiper-slide"><img src="img/opinions2.jpg" alt="" srcset=""></div>
-                <div class="swiper-slide"><img src="img/thunder.jpg" alt="" srcset=""></div>
+                <div class="hero-swiper__slide swiper-slide"><img src="img/cctv.jpg" alt="" srcset=""></div>
+                <div class="hero-swiper__slide swiper-slide"><img src="img/opinions.jpg" alt="" srcset=""></div>
+                <div class="hero-swiper__slide swiper-slide"><img src="img/opinions2.jpg" alt="" srcset=""></div>
+                <div class="hero-swiper__slide swiper-slide"><img src="img/thunder.jpg" alt="" srcset=""></div>
             </div>
             <div class="swiper-pagination mb-20 z-50"></div>
         </div>
@@ -87,10 +87,10 @@
             class="absolute h-32 w-full  bg-slate-900 -bottom-16 z-30  m-auto left-0 right-0 p-3 lg:rounded-2xl  flex lg:w-1/2 justify-evenly gap-10 items-center">
             <div class="text-center text-white"> <span class="text-orange-500 lg:text-4xl text-2xl font-semibold">150
                     <br></span><span class="text-white font-bold text-sm lg:text-base">Wykonanych zlecen</span></div>
-            <div class="text-center text-white"> <span class="text-orange-500 lg:text-4xl text-2xl font-semibold">150
-                    <br></span><span class="text-white font-bold text-sm lg:text-base">Wykonanych zlecen</span></div>
-            <div class="text-center text-white"> <span class="text-orange-500 lg:text-4xl text-2xl font-semibold">150
-                    <br></span><span class="text-white font-bold text-sm lg:text-base ">Wykonanych zlecen</span></div>
+            <div class="text-center text-white"> <span class="text-orange-500 lg:text-4xl text-2xl font-semibold">8
+                    <br></span><span class="text-white font-bold text-sm lg:text-base">Lat doświadczenia</span></div>
+            <div class="text-center text-white"> <span class="text-orange-500 lg:text-4xl text-2xl font-semibold">100%
+                    <br></span><span class="text-white font-bold text-sm lg:text-base ">Profesjonalizmu</span></div>
         </div>
     </section>
     <section class="relative z-20">
@@ -142,21 +142,21 @@
             </defs>
         </svg>
         <svg xmlns="http://www.w3.org/2000/svg"
-            class="absolute w-full lg:w-1/2 z-20 -translate-y-56 left-1/2 -translate-x-1/2" width="3001" height="1285"
-            viewBox="0 0 3001 1285" fill="none">
+            class="line-svg absolute w-full lg:w-1/2 z-20 -translate-y-56 left-1/2 -translate-x-1/2" width="3001"
+            height="1285" viewBox="0 0 3001 1285" fill="none">
             <path class="st0" xmlns="http://www.w3.org/2000/svg"
                 d="M10 690.5C576.5 1692.5 1342.5 1662 1634.5 1662C1952.5 1662 2906.89 1503.23 2742 750.5C2653.5 346.5 2336.5 149.5 1608.5 10"
                 stroke-linecap="round" />
         </svg>
     </section>
     <div class="light-gradient z-10"></div>
-    <div class="flex justify-around z-0 px-6 lg:px-32 py-48 flex-wrap">
+    <div class="flex justify-around z-10 px-6 lg:px-32 py-48 flex-wrap">
         <div>
             <h2
                 class="text-gray-700 text-4xl relative after:absolute after:w-10 after:h-1 after:left-0 after:-bottom-2 after:bg-orange-500 mb-10">
                 O nas
             </h2>
-            <div class="text-gray-700 max-w-lg">
+            <div class="text-gray-700 max-w-lg text-lg antialiased font-semibold ">
                 <p class="mb-3">
                     Jesteśmy dynamicznym zespołem specjalistów ds. elektromontażu, skupionym na dostarczaniu wysokiej
                     jakości usług.
@@ -176,10 +176,157 @@
                 </p>
             </div>
         </div>
-        <div class="rounded-3xl overflow-hidden"><img src="img/about.png" alt=""></div>
+        <img class="rounded-3xl overflow-hidden light-shadow" src="img/about.png" alt="">
     </div>
     </section>
-
+    <h3 class="text-gray-800 text-center text-2xl p-3 ">Nasze instalacje zasilają między innymi</h3>
+    <section class="p-10 lg:p-20 bg-slate-800">
+        <div class="w-full lg:w-1/2 left-1/2 lg:translate-x-1/2">
+            <div
+                class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+                <ul
+                    class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                    <li>
+                        <img src="img/facebook.svg" alt="Facebook" />
+                    </li>
+                    <li>
+                        <img src="img/disney.svg" alt="Disney" />
+                    </li>
+                    <li>
+                        <img src="img/airbnb.svg" alt="Airbnb" />
+                    </li>
+                    <li>
+                        <img src="img/apple.svg" alt="Apple" />
+                    </li>
+                    <li>
+                        <img src="img/samsung.svg" alt="Samsung" />
+                    </li>
+                    <li>
+                        <img src="img/quora.svg" alt="Quora" />
+                    </li>
+                    <li>
+                        <img src="img/sass.svg" alt="Sass" />
+                    </li>
+                </ul>
+                <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+                    aria-hidden="true">
+                    <li>
+                        <img src="img/facebook.svg" alt="Facebook" />
+                    </li>
+                    <li>
+                        <img src="img/disney.svg" alt="Disney" />
+                    </li>
+                    <li>
+                        <img src="img/airbnb.svg" alt="Airbnb" />
+                    </li>
+                    <li>
+                        <img src="img/apple.svg" alt="Apple" />
+                    </li>
+                    <li>
+                        <img src="img/samsung.svg" alt="Samsung" />
+                    </li>
+                    <li>
+                        <img src="img/quora.svg" alt="Quora" />
+                    </li>
+                    <li>
+                        <img src="img/sass.svg" alt="Sass" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-gray-100 text-lg pt-10 text-center antialiased">Ale także wiele mieszkań i gospodarstw domowych
+        </p>
+    </section>
+    <section class="services py-20 items-center">
+        <h2
+            class="text-gray-700 text-4xl relative after:absolute after:w-20 after:h-1 after:left-0 after:-bottom-2 after:bg-orange-500 mb-10 ml-6 lg:ml-32">
+            Oferujemy
+        </h2>
+        <div class="swiper service-swiper">
+            <div class="swiper-wrapper py-10">
+                <div class="swiper-slide p-5">
+                    <div class="neu-shadow  rounded-2xl p-10 text-center flex flex-col justify-center h-[30rem]">
+                        <img src="img/service1.png" class="h-48 object-contain" alt="" srcset="">
+                        <h3 class="text-2xl mt-5">Elektromontaż</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error magnam obcaecati mollitia eos
+                            reiciendis? Necessitatibus</p>
+                    </div>
+                </div>
+                <div class="swiper-slide p-5">
+                    <div class="neu-shadow  rounded-2xl p-10 text-center flex flex-col justify-center h-[30rem]">
+                        <img src="img/service2.png" class="h-48 object-contain" alt="" srcset="">
+                        <h3 class="text-2xl mt-5">Elektromontaż</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error magnam obcaecati mollitia eos
+                            reiciendis? Necessitatibus</p>
+                    </div>
+                </div>
+                <div class="swiper-slide p-5">
+                    <div class="neu-shadow  rounded-2xl p-10 text-center flex flex-col justify-center h-[30rem]">
+                        <img src="img/service3.png" class="h-48 object-contain" alt="" srcset="">
+                        <h3 class="text-2xl mt-5">Elektromontaż</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error magnam obcaecati mollitia eos
+                            reiciendis? Necessitatibus</p>
+                    </div>
+                </div>
+                <div class="swiper-slide p-5">
+                    <div class="neu-shadow  rounded-2xl p-10 text-center flex flex-col justify-center h-[30rem]">
+                        <img src="img/service2.png" class="h-48 object-contain" alt="" srcset="">
+                        <h3 class="text-2xl mt-5">Elektromontaż</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error magnam obcaecati mollitia eos
+                            reiciendis? Necessitatibus</p>
+                    </div>
+                </div>
+                <div class="swiper-slide p-5">
+                    <div class="neu-shadow  rounded-2xl p-10 text-center flex flex-col justify-center h-[30rem]">
+                        <img src="img/service3.png" class="h-48 object-contain" alt="" srcset="">
+                        <h3 class="text-2xl mt-5">Elektromontaż</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error magnam obcaecati mollitia eos
+                            reiciendis? Necessitatibus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section
+        class="contact min-h-screen bg-gradient-to-bl from-indigo-950 to-black flex justify-around z-10 px-6 lg:px-32 py-48 flex-wrap items-center">
+        <div class="lg:w-96 w-full">
+            <h2
+                class="text-gray-100 text-4xl relative after:absolute after:w-24 after:h-1 after:left-0 after:-bottom-2 after:bg-orange-500 mb-10">
+                Skontaktuj sie z nami
+            </h2>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Twój
+                        adres email</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="example@email.com" required>
+                </div>
+                <div>
+                    <label for="subject"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Temat</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="W czym możemy ci pomóc" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Twoja
+                        wiadomosc
+                    </label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Opisz nieco dokładniej"></textarea>
+                </div>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-orange-600 hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                    message</button>
+            </form>
+        </div>
+        <div class="envelope">
+            <img src="img/envelope.png" alt="">
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script type="module" src="index.js"></script>
 
