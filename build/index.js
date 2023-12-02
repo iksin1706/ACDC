@@ -28,6 +28,7 @@ const heroSwiper = new Swiper(swiper, {
   direction: 'horizontal',
   speed: '1000',
   loop: 'true',
+  lazy: 'true',
   pagination: {
     el: '.swiper-pagination',
   },
