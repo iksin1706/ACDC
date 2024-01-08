@@ -40,6 +40,10 @@ body,html{
   height: 50%;
   background-color: #E09137; 
 }
+.selected {
+  background: orange;
+}
+
 
 .animate{
   visibility: hidden;
@@ -52,6 +56,7 @@ body,html{
 .animate>.hero-header-delayed::after{
   animation: slide-left 1s ease-out forwards;
 }
+
 
 
 @keyframes reveal{

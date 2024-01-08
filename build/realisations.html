@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="myStyles.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="minimal.css">
+    <style>
+
+    </style>
+</head>
+
+<body class="light-gradient-back min-h-screen">
+    <header class="absolute z-40 w-full bg-slate-900">
+        <nav class=" border-gray-200 px-4 lg:px-32 py-5 bg-gradient-to-l">
+            <div class="flex flex-wrap justify-between items-center">
+                <a href="https://flowbite.com" class="flex items-center">
+                    <img src="img/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-white">AC DC</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <a href="#contact"
+                        class="text-white bg-orange-500 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Kontakt</a>
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="#about"
+                                class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-200 lg:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">O
+                                nas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#clients"
+                                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-200 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Klienci</a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-200 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Nasze
+                                usługi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="lg:pt-40 sm:pt-40 md:pt-40 pt-40">
+            <h2
+                class="text-gray-700 text-4xl relative after:absolute after:w-20 after:h-1 after:left-0 after:-bottom-2 after:bg-orange-500 mb-10 mx-4 lg:mx-32 md:mx-10 sm:mx-4">
+                Realizacje
+            </h2>
+            <div
+                class="swiper categories lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)]">
+                <div class="swiper-wrapper p-10 pl-0">
+                    <div class="swiper-slide">
+                        <div class="neu-shadow  rounded-2xl p-8 text-center flex flex-col justify-center h-8 category selected"
+                            option="elektro" index="0">
+                            <h3 class="lg:text-large text-base pointer-events-none ">Maszyny i urządzenia</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="neu-shadow  rounded-2xl p-8 text-center flex flex-col justify-center h-8 category"
+                            option="przemysl" index="1">
+                            <h3 class="lg:text-large text-base pointer-events-none">Instalacje w przemyśle</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="neu-shadow  rounded-2xl p-8 text-center flex flex-col justify-center h-8  category"
+                            option="domy" index="2">
+                            <h3 class="lg:text-large text-base pointer-events-none">Instalacje w domach</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="neu-shadow  rounded-2xl p-8 text-center flex flex-col justify-center h-8 category"
+                            option="publiczny" index="3">
+                            <h3 class="lg:text-large text-base pointer-events-none">Obiekty użytku publicznego</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="neu-shadow  rounded-2xl p-8 text-center flex flex-col justify-center h-8 category"
+                            option="odgrom" index="4">
+                            <h3 class="lg:text-large text-base pointer-events-none">Instalacje odgromowe</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="neu-shadow  rounded-2xl p-8 text-center flex flex-col justify-center h-8 category"
+                            option="fotowoltaika" index="5">
+                            <h3 class="lg:text-large text-base pointer-events-none">Fotowoltaika</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="neu-shadow  rounded-2xl p-8 text-center flex flex-col justify-center h-8 category"
+                            option="remonty" index="6">
+                            <h3 class="lg:text-large text-base pointer-events-none">Remonty</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="neu-shadow  rounded-2xl p-8 text-center flex flex-col justify-center h-8 category"
+                            option="ziemne" index="7">
+                            <h3 class="text-large pointer-events-none">Prace ziemne</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <div class="p-4 lg:px-32 md:px-10 spx-4 pt-5">
+                <div class="active elektro-wrapper category-wrapper">
+                    <div
+                        class="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>a:not(:first-child)]:mt-8"  name="elektro">
+                        <a href="" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/1.jpg" alt=""
+                                loading="lazy" rel="no-refresh">
+                        </a>
+                        <a href="#elektro?slideIndex=1" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/2.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#elektro" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/3.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#elektro" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/4.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#elektro" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/5.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#elektro" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/6.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#elektro" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/7.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#elektro" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/8.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#elektro" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/9.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#elektro" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/10.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#elektro"  class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/maszyny/thumb/11.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="przemysl-wrapper category-wrapper">
+                    <div
+                        class="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>a:not(:first-child)]:mt-8 "  name="przemysl">
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/1.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/2.jpg" alt=""
+                                loading="lazy" index="2">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/3.jpg" alt=""
+                                loading="lazy" index="3">
+                        </a>
+                        <a href="#przemysl" slideIndex="1" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/4.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/5.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/6.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/7.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/8.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/9.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/10.jpg"
+                                alt="" loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/11.jpg"
+                                alt="" loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/12.jpg"
+                                alt="" loading="lazy">
+                        </a>
+                        <a href="#przemysl" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/przemysl/thumb/13.jpg"
+                                alt="" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="domy-wrapper category-wrapper">
+                    <div
+                        class="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>a:not(:first-child)]:mt-8 "  name="domy">
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/1.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/2.jpg" alt=""
+                                loading="lazy" index="2">
+                        </a>
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/3.jpg" alt=""
+                                loading="lazy" index="3">
+                        </a>
+                        <a href="#domy" slideIndex="1" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/4.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/5.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/6.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/7.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/8.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/9.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/10.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#domy" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/domy/thumb/11.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="publiczny-wrapper category-wrapper">
+                    <div
+                        class="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>a:not(:first-child)]:mt-8 " name="publiczny"> 
+                        <a href="#publiczny" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/publiczny/thumb/1.jpg"
+                                alt="" loading="lazy">
+                        </a>
+                        <a href="#publiczny" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/publiczny/thumb/2.jpg"
+                                alt="" loading="lazy" index="2">
+                        </a>
+                        <a href="#publiczny" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/publiczny/thumb/3.jpg"
+                                alt="" loading="lazy" index="3">
+                        </a>
+                        <a href="#publiczny" slideIndex="1" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/publiczny/thumb/4.jpg"
+                                alt="" loading="lazy">
+                        </a>
+                        <a href="#publiczny" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/publiczny/thumb/5.jpg"
+                                alt="" loading="lazy">
+                        </a>
+                        <a href="#publiczny" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/publiczny/thumb/6.jpg"
+                                alt="" loading="lazy">
+                        </a>
+                        <a href="#publiczny" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/publiczny/thumb/7.jpg"
+                                alt="" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="odgrom-wrapper category-wrapper">
+                    <div
+                        class="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>a:not(:first-child)]:mt-8 "  name="odgrom">
+                        <a href="#odgrom" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/odgrom/thumb/1.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#odgrom" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/odgrom/thumb/2.jpg" alt=""
+                                loading="lazy" index="2">
+                        </a>
+                        <a href="#odgrom" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/odgrom/thumb/3.jpg" alt=""
+                                loading="lazy" index="3">
+                        </a>
+                        <a href="#odgrom" slideIndex="1" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/odgrom/thumb/4.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="fotowoltaika-wrapper category-wrapper">
+                    <div
+                        class="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>a:not(:first-child)]:mt-8 "  name="fotowoltaika">
+                        <a href="#fotowoltaika" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/fotowoltaika/thumb/1.jpg"
+                                alt="">
+                        </a>
+                        <a href="#fotowoltaika" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/fotowoltaika/thumb/2.jpg"
+                                alt="" loading="lazy" index="2">
+                        </a>
+                        <a href="#fotowoltaika" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/fotowoltaika/thumb/3.jpg"
+                                alt="" loading="lazy" index="3">
+                        </a>
+                    </div>
+                </div>
+                <div class="remonty-wrapper category-wrapper">
+                    <div
+                        class="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>a:not(:first-child)]:mt-8 "  name="remonty">
+                        <a href="#remonty" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/remonty/thumb/1.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#remonty" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/remonty/thumb/2.jpg" alt=""
+                                loading="lazy" index="2">
+                        </a>
+                        <a href="#remonty" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/remonty/thumb/3.jpg" alt=""
+                                loading="lazy" index="3">
+                        </a>
+                        <a href="#remonty" slideIndex="1" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/remonty/thumb/4.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#remonty" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/remonty/thumb/5.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#remonty" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/remonty/thumb/6.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#remonty" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/remonty/thumb/7.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#remonty" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/remonty/thumb/8.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="ziemne-wrapper category-wrapper">
+                    <div
+                        class="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>a:not(:first-child)]:mt-8 "  name="ziemne">
+                        <a href="#ziemne" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/ziemne/thumb/1.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#ziemne" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/ziemne/thumb/2.jpg" alt=""
+                                loading="lazy" index="2">
+                        </a>
+                        <a href="#ziemne" slideIndex="0" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/ziemne/thumb/3.jpg" alt=""
+                                loading="lazy" index="3">
+                        </a>
+                        <a href="#ziemne" slideIndex="1" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/ziemne/thumb/4.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                        <a href="#ziemne" slideIndex="1" lightBoxIndex="0" class="photo mt-2 block">
+                            <img class="h-auto max-w-full rounded-lg" src="img/realisations/ziemne/thumb/5.jpg" alt=""
+                                loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div href="#" id="elektro"
+        class="light-box target:block hidden fixed h-screen w-screen z-50  bg-opacity-80 bg-black left-0 top-0"
+        lightBoxIndex="0">
+        <div class="w-11/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  absolute">
+            <div class="swiper light-box-swiper "
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" name="elektro">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/1.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/2.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/3.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/4.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/5.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/6.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/7.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/8.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/9.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/10.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/maszyny/11.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="light-box-swiper-button-next swiper-button-next"></div>
+                <div class="light-box-swiper-button-prev swiper-button-prev"></div>
+                <div class="light-box-swiper-pagination"></div>
+            </div>
+        </div>
+        <a  class="fixed right-5 top-3 text-white text-5xl close">x</a>
+    </div>
+    <div href="#" id="przemysl"
+        class="light-box target:block hidden fixed h-screen w-screen z-50  bg-opacity-80 bg-black left-0 top-0"
+        lightBoxIndex="0">
+        <div class="w-11/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  absolute" >
+            <div class="swiper light-box-swiper "
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" name="przemysl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/1.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/2.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/3.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/4.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/5.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/6.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/7.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/8.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/9.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/10.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/11.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/12.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/przemysl/13.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="light-box-swiper-button-next swiper-button-next"></div>
+                <div class="light-box-swiper-button-prev swiper-button-prev"></div>
+                <div class="light-box-swiper-pagination"></div>
+            </div>
+        </div>
+        <a  class="fixed right-5 top-3 text-white text-5xl close">x</a>
+    </div>
+    <div href="#" id="domy"
+        class="light-box target:block hidden fixed h-screen w-screen z-50  bg-opacity-80 bg-black left-0 top-0"
+        lightBoxIndex="0">
+        <div class="w-11/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  absolute">
+            <div class="swiper light-box-swiper"
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" name="domy">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/realisations/domy/1.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/2.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/3.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/4.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/5.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/6.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/7.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/8.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/9.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/10.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/domy/11.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="light-box-swiper-button-next swiper-button-next"></div>
+                <div class="light-box-swiper-button-prev swiper-button-prev"></div>
+                <div class="light-box-swiper-pagination"></div>
+            </div>
+        </div>
+        <a  class="fixed right-5 top-3 text-white text-5xl close">x</a>
+    </div>
+    <div href="#" id="publiczny"
+        class="light-box target:block hidden fixed h-screen w-screen z-50  bg-opacity-80 bg-black left-0 top-0"
+        lightBoxIndex="0">
+        <div class="w-11/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  absolute">
+            <div class="swiper light-box-swiper "
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" name="publiczny">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/realisations/publiczny/1.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/publiczny/2.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/publiczny/3.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/publiczny/4.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/publiczny/5.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/publiczny/6.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/publiczny/7.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="light-box-swiper-button-next swiper-button-next"></div>
+                <div class="light-box-swiper-button-prev swiper-button-prev"></div>
+                <div class="light-box-swiper-pagination"></div>
+            </div>
+        </div>
+        <a  class="fixed right-5 top-3 text-white text-5xl close">x</a>
+    </div>
+    <div href="#" id="odgrom"
+        class="light-box target:block hidden fixed h-screen w-screen z-50  bg-opacity-80 bg-black left-0 top-0"
+        lightBoxIndex="0">
+        <div class="w-11/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  absolute">
+            <div class="swiper light-box-swiper "
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" name="odgrom">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/realisations/odgrom/1.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/odgrom/2.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/odgrom/3.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/odgrom/4.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="light-box-swiper-button-next swiper-button-next"></div>
+                <div class="light-box-swiper-button-prev swiper-button-prev"></div>
+                <div class="light-box-swiper-pagination"></div>
+            </div>
+        </div>
+        <a  class="fixed right-5 top-3 text-white text-5xl close">x</a>
+    </div>
+    <div href="#" id="fotowoltaika"
+        class="light-box target:block hidden fixed h-screen w-screen z-50  bg-opacity-80 bg-black left-0 top-0"
+        lightBoxIndex="0">
+        <div class="w-11/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  absolute">
+            <div class="swiper light-box-swiper "
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" name="fotowoltaika">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/realisations/fotowoltaika/1.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="swiper-slide"><img src="img/realisations/fotowoltaika/2.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="swiper-slide"><img src="img/realisations/fotowoltaika/3.jpg" alt="" loading="lazy">
+                    </div>
+                </div>
+                <div class="light-box-swiper-button-next swiper-button-next"></div>
+                <div class="light-box-swiper-button-prev swiper-button-prev"></div>
+                <div class="light-box-swiper-pagination"></div>
+            </div>
+        </div>
+        <a  class="fixed right-5 top-3 text-white text-5xl close">x</a>
+    </div>
+    <div href="#" id="remonty"
+        class="light-box target:block hidden fixed h-screen w-screen z-50  bg-opacity-80 bg-black left-0 top-0"
+        lightBoxIndex="0">
+        <div class="w-11/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  absolute">
+            <div class="swiper light-box-swiper "
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" name="remonty">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/realisations/remonty/1.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/remonty/2.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/remonty/3.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/remonty/4.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/remonty/5.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/remonty/6.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/remonty/7.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/remonty/8.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="light-box-swiper-button-next swiper-button-next"></div>
+                <div class="light-box-swiper-button-prev swiper-button-prev"></div>
+                <div class="light-box-swiper-pagination"></div>
+            </div>
+        </div>
+        <a  class="fixed right-5 top-3 text-white text-5xl close">x</a>
+    </div>
+    <div href="#" id="ziemne"
+        class="light-box target:block hidden fixed h-screen w-screen z-50  bg-opacity-80 bg-black left-0 top-0"
+        lightBoxIndex="0">
+        <div class="w-11/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  absolute">
+            <div class="swiper light-box-swiper "
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" name="ziemne">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/realisations/ziemne/1.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/ziemne/2.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/ziemne/3.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/ziemne/4.jpg" alt="" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="img/realisations/ziemne/5.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="light-box-swiper-button-next swiper-button-next"></div>
+                <div class="light-box-swiper-button-prev swiper-button-prev"></div>
+                <div class="light-box-swiper-pagination"></div>
+            </div>
+        </div>
+        <a  class="fixed right-5 top-3 text-white text-5xl close">x</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script type="module" src="js/realisations.js"></script>
+</body>

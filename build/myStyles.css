@@ -210,7 +210,7 @@ html {
   animation: dash-animation 2.2s linear reverse forwards;
 }
 .animated .line-svg {
-  animation: line-disaper 3s;
+  animation: line-disaper 3s forwards;
 }
 
 @keyframes line-disaper {

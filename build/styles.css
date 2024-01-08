@@ -521,3 +521,120 @@ video {
 body,html{
   box-sizing: border-box;
 }
+
+.selected {
+  background: rgb(255, 123, 0);
+  color: #f2f2f2 !important;
+}
+.category {
+  cursor: pointer;
+  color: #202020;
+}
+
+.category-wrapper{
+  display: none;
+  opacity: 0;
+}
+.active {
+  display: block !important;
+  transition: 1s;
+  opacity: 1;
+}
+.swiper-slide > img {
+  object-fit: contain;
+  height: 80vh !important;
+}
+.light-box-swiper .swiper-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.light-box-swiper-pagination {
+  color: white !important;
+  left: 50% !important;
+  transform: translate(-50%);
+  position: fixed;
+  text-align: center;
+  bottom: -2rem !important;
+}
+.hero-swiper__slide img{
+  object-fit: cover;
+  height: 100% !important;
+}
+.composition {
+  position: relative;
+  
+}
+
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem #00000077;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all .2s;
+  outline-offset: 2rem;
+}
+
+.composition__photo--p1 {
+  left: 0;
+  top: 0;
+  transform: scale(0);
+}
+
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+  transform: scale(0);
+}
+
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+  transform: scale(0);
+}
+
+.animated .composition__photo--p1 {
+  animation: scaleUp 1s forwards cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  animation-delay: 2s;
+}
+
+.animated .composition__photo--p2 {
+  animation: scaleUp 1s forwards cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  animation-delay: 2.25s;
+}
+
+.animated .composition__photo--p3 {
+  animation: scaleUp 1s forwards cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  animation-delay: 2.5s;
+}
+
+@keyframes scaleUp {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+  
+}
+
+.composition__photo:hover {
+  outline: .5rem solid rgb(255, 145, 0);
+  transition: all .2s;
+  transform: scale(1.05) translateY(-.5rem);
+  box-shadow: 0 2.5rem 4rem #000000aa;
+  z-index: 20;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(.95);
+}
+.close {
+  cursor: pointer;
+  transition: .5s;
+
+}
+.close:hover{
+  transform: scale(1.2);
+}

@@ -11,12 +11,17 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="odometer.min.js"></script>
+    <script src="js/odometer.min.js"></script>
     <link rel="stylesheet" href="minimal.css">
     <!-- Demo styles -->
 </head>
 
 <body class="light-gradient-back min-h-screen">
+
+    <div class="preloader">
+        
+    </div>
+
     <header class="absolute z-40 w-full">
         <nav class=" border-gray-200 px-4 lg:px-32 py-5 bg-gradient-to-l">
             <div class="flex flex-wrap justify-between items-center">
@@ -29,7 +34,7 @@
                         class="text-white bg-orange-500 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Kontakt</a>
                     <button data-collapse-toggle="mobile-menu-2" type="button"
                         class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        aria-controls="mobile-menu-2" aria-expanded="true">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -44,8 +49,8 @@
                         </svg>
                     </button>
                 </div>
-                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 bg-slate-900" id="mobile-menu-2">
+                    <ul class="flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
                             <a href="#about"
                                 class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-200 lg:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">O
@@ -60,6 +65,11 @@
                             <a href="#services"
                                 class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-200 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Nasze
                                 usługi</a>
+                        </li>
+                        <li>
+                            <a href="realisations.html"
+                                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-200 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Realizacje
+                                </a>
                         </li>
                     </ul>
                 </div>
@@ -158,15 +168,16 @@
             </defs>
         </svg>
         <svg xmlns="http://www.w3.org/2000/svg"
-            class="line-svg absolute w-full lg:w-1/2 z-20 lg:-translate-y-56 -translate-y-80 left-1/2 -translate-x-1/2" width="3001"
-            height="1285" viewBox="0 0 3001 1285" fill="none">
-            <path class="st0 drop-shadow-2xl shadow-r stroke-[30px] lg:stroke-[15px]" xmlns="http://www.w3.org/2000/svg" 
+            class="line-svg absolute w-full lg:w-1/2 z-20 lg:-translate-y-56 -translate-y-80 left-1/2 -translate-x-1/2"
+            width="3001" height="1285" viewBox="0 0 3001 1285" fill="none">
+            <path class="st0 drop-shadow-2xl shadow-r stroke-[30px] lg:stroke-[15px]" xmlns="http://www.w3.org/2000/svg"
                 d="M10 690.5C576.5 1692.5 1342.5 1662 1634.5 1662C1952.5 1662 2906.89 1503.23 2742 750.5C2653.5 346.5 2336.5 149.5 1608.5 10"
                 stroke-linecap="round" />
         </svg>
     </section>
     <div class="light-gradient fixed z-10"></div>
-    <div class="flex justify-around z-10 px-6 lg:px-32 pt-48 pb-20 flex-wrap bg-transparent">
+    <div
+        class="flex md:justify-around z-10 px-6 lg:px-32 pt-48 pb-20 md:flex-row justify-center flex-col bg-transparent items-center">
         <div class=" py-10">
             <h2
                 class="text-gray-700 text-4xl relative after:absolute after:w-10 after:h-1 after:left-0 after:-bottom-2 after:bg-orange-500 mb-10">
@@ -199,13 +210,28 @@
                 </ul>
             </div>
         </div>
-        <img class="rounded-3xl overflow-hidden light-shadow object-cover" src="img/about.png" alt="">
+        <div class="md:w-1/3 h-80 w-full flex flex-col">
+            <div class="composition animation-trigger">
+                <img src="img/realisations/fotowoltaika/3.jpg" alt="Photo 1"
+                    class="composition__photo composition__photo--p1" />
+                <img src="img/realisations/maszyny/7.jpg" alt="Photo 2"
+                    class="composition__photo composition__photo--p2" />
+                <img src="img/realisations/domy/3.jpg" alt="Photo 3"
+                    class="composition__photo composition__photo--p3" />
+            </div>
+
+        </div>
+
+
     </div>
-    <h3 class="text-gray-800 text-3xl font-bold p-10 text-center antialiased">Nasze instalacje zasilają
-    </h3>
+    <div class="w-full flex justify-center">
+        <a
+            class=" py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300 bg-orange-600 dark:focus:ring-primary-800 transition-transform hover:cursor-pointer hover:-translate-y-1 hover:shadow">Zobacz
+            nasze realizacje</a>
+    </div>
     </section>
 
-    <section id="clients" class="p-10 lg:p-20 bg-[#DEDFE8]">
+    <!-- <section id="clients" class="p-10 lg:p-20 bg-[#DEDFE8]">
         <div class="w-full lg:w-1/2 left-1/2 lg:translate-x-1/2">
             <div
                 class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
@@ -255,8 +281,8 @@
         </div>
         <p class="text-gray-800 text-lg pt-10 text-center antialiased">Ale także wiele mieszkań i gospodarstw domowych
         </p>
-    </section>
-    <section id="service" class="services pt-20 items-center bg-slate-50">
+    </section> -->
+    <section id="service" class="services pt-20 items-center">
         <div class="swiper service-swiper">
             <svg class="absolute bottom-0 left-1/2 -translate-x-1/2 h-full" xmlns="http://www.w3.org/2000/svg"
                 width="1918" height="586" viewBox="0 0 1918 520" fill="none">
@@ -322,7 +348,8 @@
         <div class="text-center flex justify-center items-center space-y-10 flex-col py-20 bg-[#DEDFE8]">
             <h4 class="text-orange-500 text-4xl text-bold">Nie ma tego czego potrzebujesz?</h4>
             <p class="text-gray-800 text-3xl text-bold">Nie szkodzi!</p>
-            <p class="text-gray-800 max-w-lg text-lg">Wyżej wymienione usługi są naszą specjalnością i wykonujemy je najczęsciej
+            <p class="text-gray-800 max-w-lg text-lg">Wyżej wymienione usługi są naszą specjalnością i wykonujemy je
+                najczęsciej
                 ale mamy
                 doświaczenie w
                 znacznie szerszym zakresie. Skonsultuj sie z nami a zobaczymy jak możemy pomóc aby to zrobić zadzwoń na
@@ -369,9 +396,10 @@
         <div class="envelope lg:w-auto w-1/2">
             <img src="img/envelope.png" alt="">
         </div>
+
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script type="module" src="index.js"></script>
+    <script type="module" src="js/index.js"></script>
 
 </body>
 
