@@ -213,4 +213,16 @@ document.addEventListener("DOMContentLoaded", function () {
     history.pushState({}, '', url.toString()); // Use pushState to add a new history entry
     handleURLChange();
   }
+
+  const toggleButton = document.querySelector('[data-collapse-toggle="mobile-menu-2"]');
+
+// Get the mobile menu container element
+const mobileMenu = document.getElementById('mobile-menu-2');
+
+  toggleButton.addEventListener('click', function() {
+    // Toggle the 'hidden' class on the mobile menu container
+    mobileMenu.classList.toggle('hidden');
+    const expanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';
+    toggleButton.setAttribute('aria-expanded', expanded);
+  });
   

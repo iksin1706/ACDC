@@ -144,8 +144,6 @@ const mobileMenu = document.getElementById('mobile-menu-2');
 toggleButton.addEventListener('click', function() {
   // Toggle the 'hidden' class on the mobile menu container
   mobileMenu.classList.toggle('hidden');
-  
-  // Toggle the 'aria-expanded' attribute
   const expanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';
   toggleButton.setAttribute('aria-expanded', expanded);
 });
