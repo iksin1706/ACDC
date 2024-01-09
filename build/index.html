@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +11,9 @@
         content="Elektryk Krosno, Instalacje elektryczne, Usługi elektryczne, Elektryk Podkarpacie, Bezpieczne instalacje, Naprawa instalacji elektrycznych, Elektryk w Krośnie, Profesjonalne usługi elektryczne, Montaż instalacji elektrycznych, Serwis elektryczny Krosno">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="myStyles.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="js/odometer.min.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -371,7 +370,7 @@
             </h2>
 
 
-            <div class="swiper-wrapper py-10 pb-5">
+            <div class="swiper-wrapper py-10 pb-20">
                 <div class="swiper-slide p-5">
                     <div
                         class="neu-shadow  rounded-2xl p-10 text-center flex flex-col justify-center h-[30rem] bg-white">
@@ -441,7 +440,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination mb-10"></div>
+            <div class="swiper-pagination pb-5"></div>
         </div>
         <!-- <div class="text-center flex justify-center items-center space-y-10 flex-col py-20 bg-[#DEDFE8]">
             <h4 class="text-orange-500 text-4xl text-bold">Nie ma tego czego potrzebujesz?</h4>
@@ -456,7 +455,7 @@
             <p class="text-gray-800 text-2xl">lub</p>
         </div> -->
     </section>
-    <section id="contact" style="margin-top: -.5rem;"
+    <section id="contact"
         class="contact min-h-screen bg-gradient-to-bl from-indigo-950 to-black flex justify-around z-10 px-6 lg:px-32 py-32 items-center rounded-t-[2rem] flex-col">
         <div class="flex flex-col items-center mb-10">
             <div class="envelope w-40 mb-10">
@@ -501,14 +500,13 @@
                     <p class="text-white">Wysyłając wiadomość e-mail zgadzasz się na przetwarzanie danych osobowych w
                         celu odpowiedzenia na wiadomość. <a href="policy.html" class="link">Polityka prywatności</a></p>
                     <button type="submit"
-                        class="py-3 px-5 text-black text-sm font-medium text-center rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-orange-600 hover:bg-primary-700 dark:focus:ring-primary-800">Send
-                        message</button>
+                        class="py-3 px-5 text-black text-sm font-medium text-center rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-orange-600 hover:bg-primary-700 dark:focus:ring-primary-800" aria-label="Wyślij wiadomość">Wyślij wiadomośc</button>
                 </form>
             </div>
             <div class="flex flex-col text-center ">
                 <p class="text-5xl text-gray-50">Adrian Jasiński</p>
                 <div class="flex flex-row mt-10">
-                    <a href="tel:+48725454857"
+                    <a href="tel:+48725454857" aria-label="Zadzwoń do nas"
                         class=" text-2xl text-black p-5 rounded-lg border-orange-500 border-4 flex justify-between
                         bg-orange-500 mr-5"><svg xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="30px" width="30px"
@@ -525,7 +523,7 @@
                                 </g>
                             </g>
                         </svg>725454857</a>
-                    <a href="mailto:adrian.jasi@interia.eu"
+                    <a href="mailto:adrian.jasi@interia.eu" aria-label="Wyślij email"
                         class="text-2xl text-gray-50 p-5 rounded-lg border-orange-500 border-4 flex justify-center"><svg
                             xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24"
                             fill="none">
@@ -570,8 +568,8 @@
                 <ul class="text-white">
                     <li>Ustrobna 302, 38-406 Odrzykoń</li>
                     <li>Krosno, województwo podkarpackie</li>
-                    <li>Telefon kontaktowy: <a href="tel:+48725454857" class="link">+48 123 123 123</a></li>
-                    <li>Adres email: <a href="mailto:adrian.jasi@interia.eu" class="link">adrian.jasi@interia.eu</a>
+                    <li>Telefon kontaktowy: <a href="tel:+48725454857" class="link" aria-label="Zadzwoń">+48 123 123 123</a></li>
+                    <li>Adres email: <a href="mailto:adrian.jasi@interia.eu" class="link" aria-label="Wyslij email">adrian.jasi@interia.eu</a>
                     </li>
                 </ul>
             </div>
