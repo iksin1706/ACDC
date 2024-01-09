@@ -98,7 +98,10 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('animated');
-      if (entry.target.classList.contains('light-trigger')) document.querySelector('.light-gradient').classList.add('animated');
+      if (entry.target.classList.contains('light-trigger')) {
+        document.querySelector('.light-gradient').classList.add('animated');
+        document.querySelector('.composition').classList.add('animated');
+      }
     }
   });
 }, {
@@ -124,7 +127,7 @@ window.odometerOptions = {
 
 var elements = document.querySelectorAll('.stat');
 
-elements.forEach((el,index) => {
+elements.forEach((el, index) => {
   const od = new Odometer({
     el: el,
     value: 0,
@@ -141,7 +144,7 @@ const toggleButton = document.querySelector('[data-collapse-toggle="mobile-menu-
 const mobileMenu = document.getElementById('mobile-menu-2');
 
 // Add a click event listener to the toggle button
-toggleButton.addEventListener('click', function() {
+toggleButton.addEventListener('click', function () {
   // Toggle the 'hidden' class on the mobile menu container
   mobileMenu.classList.toggle('hidden');
   const expanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';

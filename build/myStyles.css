@@ -262,8 +262,7 @@ html {
 }
 
 .neu-shadow{
-  box-shadow:  10px 10px 30px #bebebe,
-             -10px -10px 30px #ffffff;
+  box-shadow:  10px 10px 30px #bebebe;
 }
 
 .granat-gradient{

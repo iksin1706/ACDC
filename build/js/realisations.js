@@ -13,6 +13,7 @@ var categorySwiper = new Swiper(swiper, {
     spaceBetween: 20,
     slidesOffsetAfter: 100,
     slidesOffsetBefore: 50,
+    freeMode:true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -85,7 +86,10 @@ let lightBoxes = {}; // Using an object instead of an array
 
 document.querySelectorAll(".light-box-swiper").forEach((element, index) => {
   let lightBox = new Swiper(element, {
-    zoom: true,
+    zoom: {
+        maxRatio: 3,
+        minRatio: 1
+      },
     lazy: true,
     pagination: {
       el: ".light-box-swiper-pagination",
@@ -96,6 +100,7 @@ document.querySelectorAll(".light-box-swiper").forEach((element, index) => {
       prevEl: ".light-box-swiper-button-prev",
     },
   });
+
 
   const name = element.getAttribute("name"); // Get the ID of the element
   lightBoxes[name] = lightBox; // Add the Swiper instance to the object with element ID as key
