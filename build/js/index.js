@@ -13,6 +13,18 @@
 //     },
 //   },
 // }
+if(window.scrollY>700) {
+  document.querySelector('#about').classList.add("animated");
+  document.querySelector('.light-gradient').classList.add('animated');
+  document.querySelector('.light-gradient').classList.add('instant');
+  document.querySelector('#about').classList.add('instant');
+  document.querySelector('.composition').classList.add('animated');
+  document.querySelectorAll('.composition__photo').forEach((element)=>{
+
+    element.classList.add('instant');
+  })
+}
+
 
 const sliderLabels = [
   { first: "Instalacje", second: "elektryczne" },

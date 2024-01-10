@@ -21,6 +21,9 @@
   border-radius: 5px !important;
   transition: 0.5s !important;
 }
+.swiper-pagination {
+z-index: 50 !important;
+}
 
 body,
 html {
@@ -149,7 +152,7 @@ html {
 
 .animated.light-gradient {
   animation: gradient-animation 1s ease-in forwards;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .light {
@@ -157,14 +160,14 @@ html {
 }
 .animated .light {
   animation: light-animation 1s linear forwards;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 .light2 {
   fill: transparent;
 }
 .animated .light2 {
   animation: light-animation 1s linear forwards;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .light3 {
@@ -172,7 +175,7 @@ html {
 }
 .animated .light3 {
   animation: light-animation2 1s linear forwards;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .light-svg {
@@ -181,7 +184,7 @@ html {
 }
 .animated .light-svg {
   animation: move-up forwards 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 .light-svg::after {
   content: "";
@@ -205,10 +208,10 @@ html {
 }
 
 .animated .st0 {
-  animation: dash-animation 2.2s linear reverse forwards;
+  animation: dash-animation 1.5s linear reverse forwards;
 }
 .animated .line-svg {
-  animation: line-disaper 3s forwards;
+  animation: line-disaper 2s forwards;
 }
 
 @keyframes line-disaper {
@@ -350,17 +353,17 @@ html {
 
 .animated .composition__photo--p1 {
   animation: scaleUp 1s forwards cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .animated .composition__photo--p2 {
   animation: scaleUp 1s forwards cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  animation-delay: 2.25s;
+  animation-delay: 1.75s;
 }
 
 .animated .composition__photo--p3 {
   animation: scaleUp 1s forwards cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  animation-delay: 2.5s;
+  animation-delay: 2s;
 }
 
 @keyframes scaleUp {
@@ -382,6 +385,10 @@ html {
 
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
+}
+.instant {
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
 }
 
 .link {
