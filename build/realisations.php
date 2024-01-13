@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="myStyles.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="realisations.css">
+
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
     <link rel="stylesheet" href="minimal.css">
     <style>
 
@@ -74,9 +73,9 @@
                 </a>
                 <div class="flex items-center lg:order-2">
                     <a href="#contact"
-                        class="text-white bg-orange-500 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Kontakt</a>
+                        class="text-white bg-orange-500 text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 hover:bg-gray-700 focus:outline-none focus:ring-gray-800">Kontakt</a>
                     <button data-collapse-toggle="mobile-menu-2" type="button"
-                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
                         aria-controls="mobile-menu-2" aria-expanded="true">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -97,18 +96,18 @@
                     <ul class="flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
                             <a href="#about"
-                                class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-200 lg:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">O
+                                class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-200 lg:hover:text-white hover:bg-gray-700 hover:text-white lg:hover:bg-transparent border-gray-700">O
                                 nas
                             </a>
                         </li>
                         <li>
                             <a href="#services"
-                                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-200 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Nasze
+                                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-200 lg:hover:text-white hover:bg-gray-700 hover:text-white lg:hover:bg-transparent border-gray-700">Nasze
                                 usługi</a>
                         </li>
                         <li>
                             <a href="realisations.html"
-                                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-200 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Realizacje
+                                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-200 lg:hover:text-white hover:bg-gray-700 hover:text-white lg:hover:bg-transparent border-gray-700">Realizacje
                             </a>
                         </li>
                     </ul>
@@ -215,13 +214,74 @@
                     <div class="light-box-swiper-pagination"></div>
                 </div>
             </div>
-            <a class="fixed right-5 top-3 text-white text-5xl close">x</a>
+            <a class="fixed right-5 top-3 text-white text-5xl close">&#10006</a>
         </div>
         <?php
     }
     ?>
+   <footer class="bg-slate-950 md:px-32 px-4 ">
+        <div class="flex justify-start items-start py-10 md:flex-row flex-col">
+            <div class="flex flex-col">
+                <div class="flex items-center">
+                    <svg class="scale-75 md:transform-none" xmlns="http://www.w3.org/2000/svg" width="80" height="80"
+                        viewBox="0 0 278 277" fill="none">
+                        <circle cx="138.667" cy="137.457" r="73.056" transform="rotate(-0.59901 138.667 137.457)"
+                            stroke="#f97316" stroke-width="3" />
+                        <circle cx="157.078" cy="89.5291" r="8.855" transform="rotate(-0.59901 157.078 89.5291)"
+                            stroke="#f97316" stroke-width="3" />
+                        <path d="M70.3086 163.105L150.069 94.7853" stroke="#f97316" stroke-width="3" />
+                        <circle cx="121.235" cy="177.794" r="8.855" transform="rotate(178.295 121.235 177.794)"
+                            stroke="#f97316" stroke-width="3" />
+                        <line x1="204.665" y1="104.019" x2="127.974" y2="172.604" stroke="#f97316" stroke-width="3" />
+                        <circle cx="98.7189" cy="107.484" r="8.855" transform="rotate(179.116 98.7189 107.484)"
+                            stroke="#f97316" stroke-width="3" />
+                        <path d="M148.51 65.0035L105.613 101.791" stroke="#f97316" stroke-width="3" />
+                        <circle cx="169.393" cy="168.865" r="8.855" transform="rotate(0.0656992 169.393 168.865)"
+                            stroke="#f97316" stroke-width="3" />
+                        <path
+                            d="M122.655 207.067C122.026 207.606 121.954 208.553 122.493 209.182C123.033 209.811 123.98 209.883 124.609 209.344L122.655 207.067ZM124.609 209.344L163.917 175.618L161.963 173.341L122.655 207.067L124.609 209.344Z"
+                            fill="#f97316" />
+                        <circle cx="136.611" cy="135.366" r="8.855" transform="rotate(179.116 136.611 135.366)"
+                            stroke="#f97316" stroke-width="3" />
+                        <line x1="188.767" y1="87.7723" x2="142.902" y2="130.513" stroke="#f97316" stroke-width="3" />
+                        <path d="M128.758 141.751L82.7921 182.917" stroke="#f97316" stroke-width="3" />
+                    </svg>
+                    <span class="text-orange-500 text-xl"> AC.DC</span>
+                </div>
+                <p class="text-white">Adrian Jasiński</p>
+                <ul class="text-white">
+                    <li>Ustrobna 302, 38-406 Odrzykoń</li>
+                    <li>Krosno, województwo podkarpackie</li>
+                    <li>Telefon kontaktowy: <a href="tel:+48725454857" class="link" aria-label="Zadzwoń">+48 123 123
+                            123</a></li>
+                    <li>Adres email: <a href="mailto:adrian.jasi@interia.eu" class="link"
+                            aria-label="Wyslij email">adrian.jasi@interia.eu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:ml-20  h-full mt-20">
+                <ul class="text-white flex flex-col justify-between">
+                    <li class="font-bold">Menu</li>
+                    <li><a href="#about" class="link">O nas</a></li>
+                    <li><a href="#services" class="link">Nasze usługi</a></li>
+                    <li><a href="#contact" class="link">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="md:ml-20  h-full mt-20">
+                <ul class="text-white flex flex-col justify-between">
+                    <li class="font-bold">Podstrony</li>
+                    <li><a href="#realisations.html" class="link">Nasze realizacje</a></li>
+                    <li><a href="#" class="link">Polityka prywatnosci</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p class="text-white text-center py-10 border-t-2 border-gray-400">©Copyright wszelkie prawa zastrzeżone |
+                Projekt i realizacja > <a href="https://iksin1706.github.io/portfolio/" class="link">Łukasz Jasiński</a>
+            </p>
+        </div>
+    </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script type="module" src="swiper-bundle.min.js"></script>
     <script type="module" src="js/realisations.js"></script>
 </body>

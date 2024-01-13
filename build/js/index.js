@@ -1,28 +1,17 @@
-// tailwind.config = {
-//   theme: {
-//     extend: {
-//       animation: {
-//         'infinite-scroll': 'infinite-scroll 25s linear infinite',
-//       },
-//       keyframes: {
-//         'infinite-scroll': {
-//           from: { transform: 'translateX(0)' },
-//           to: { transform: 'translateX(-100%)' },
-//         }
-//       }
-//     },
-//   },
-// }
-if(window.scrollY>700) {
+
+const animateLight = () => {
   document.querySelector('#about').classList.add("animated");
   document.querySelector('.light-gradient').classList.add('animated');
   document.querySelector('.light-gradient').classList.add('instant');
   document.querySelector('#about').classList.add('instant');
   document.querySelector('.composition').classList.add('animated');
   document.querySelectorAll('.composition__photo').forEach((element)=>{
-
     element.classList.add('instant');
   })
+}
+
+if(window.scrollY>700) {
+  animateLight();
 }
 
 
@@ -68,8 +57,8 @@ const changeText = (first, second) => {
   t2.innerHTML = second;
 
   header.classList.remove("animate");
-  // Triggering reflow
-  header.offsetWidth; // This line forces a reflow, ensuring CSS changes are applied before adding the class
+  
+  header.offsetWidth;
 
   requestAnimationFrame(() => {
     header.classList.add("animate");
@@ -90,7 +79,7 @@ var serviceSwiper = new Swiper(".service-swiper", {
       spaceBetween: 20,
       slidesOffsetBefore: 20,
     },
-    1024: {
+    1150: {
       slidesPerView: 3.5,
       spaceBetween: 40,
       slidesOffsetBefore: 20,
@@ -127,15 +116,6 @@ targets.forEach((target) => {
 
 const stats = [150, 8, 100]
 
-window.odometerOptions = {
-  auto: false, // Don't automatically initialize everything with class 'odometer'
-  selector: '.my-numbers', // Change the selector used to automatically find things to be animated
-  format: '(,ddd).dd', // Change how digit groups are formatted, and how many digits are shown after the decimal point
-  duration: 3000, // Change how long the javascript expects the CSS animation to take
-  theme: 'car', // Specify the theme (if you have more than one theme css file on the page)
-  animation: 'count' // Count is a simpler animation method which just increments the value,
-  // use it when you're looking for something more subtle.
-};
 
 var elements = document.querySelectorAll('.stat');
 
@@ -152,12 +132,9 @@ elements.forEach((el, index) => {
 
 const toggleButton = document.querySelector('[data-collapse-toggle="mobile-menu-2"]');
 
-// Get the mobile menu container element
 const mobileMenu = document.getElementById('mobile-menu-2');
 
-// Add a click event listener to the toggle button
 toggleButton.addEventListener('click', function () {
-  // Toggle the 'hidden' class on the mobile menu container
   mobileMenu.classList.toggle('hidden');
   const expanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';
   toggleButton.setAttribute('aria-expanded', expanded);
@@ -167,5 +144,9 @@ window.addEventListener("load", async () => {
   const preloader = document.querySelector(".preloader");
   preloader.classList.add("preloader--hidden");
   await new Promise(resolve => setTimeout(resolve, 1000)).then(() => { preloader.style.display = 'none' });
-  preloader.style.display = "none"; // Hide the preloader
+  preloader.style.display = "none";
 });
+
+document.querySelector('#contact-button').addEventListener('click',() => {
+  animateLight();
+})
