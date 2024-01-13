@@ -369,8 +369,7 @@
                         <img src="img/fotowolataika.webp" class="h-48 object-contain"
                             alt="Montaż instalacji fotowoltaicznych, falowników" srcset="">
                         <h3 class="text-2xl mt-5">Fotowoltaika</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error magnam obcaecati mollitia eos
-                            reiciendis? Necessitatibus</p>
+                        <p>Oferujemy usługi montażu instalacji fotowoltaicznych, umożliwiając naszym klientom korzystanie z odnawialnych źródeł energii. Zainstalujemy efektywny system, który przyczyni się do redukcji kosztów energii elektrycznej.</p>
                     </div>
                 </div>
                 <div class="swiper-slide p-5">
@@ -397,25 +396,31 @@
                 Skontaktuj sie z nami
             </h3>
         </div>
-        <div class="w-full flex xl:flex-row flex-col justify-between lg:px-32 items-center">
+        <div class="w-full flex xl:flex-row flex-col justify-between items-center">
             <div class="xl:w-1/2 w-full mb-10 xl:mb-0">
 
                 <h3
                     class="text-gray-100 text-4xl relative after:absolute after:w-24 after:h-1 after:left-0 after:-bottom-2 after:bg-orange-500 mb-10">
                     Napisz do nas
                 </h3>
-                <form action="#" class="space-y-8">
+                <form action="send_email.php" method="POST" class="space-y-8">
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Twój
                             adres email</label>
-                        <input type="email" id="email"
+                        <input type="email" id="email" name="email"
+                            class="shadow-sm border text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                            placeholder="example@email.com" required>
+                    </div>
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Twoje imie</label>
+                        <input type="name" id="name" name="name"
                             class="shadow-sm border text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                             placeholder="example@email.com" required>
                     </div>
                     <div>
                         <label for="subject"
                             class="block mb-2 text-sm font-medium text-gray-300">Temat</label>
-                        <input type="text" id="subject"
+                        <input type="text" id="subject" name="subject"
                             class="block p-3 w-full text-sm  rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                             placeholder="W czym możemy ci pomóc" required>
                     </div>
@@ -424,7 +429,7 @@
                             class="block mb-2 text-sm font-medium text-gray-300">Twoja
                             wiadomość
                         </label>
-                        <textarea id="message" rows="6"
+                        <textarea id="message" rows="6" name="message"
                             class="block p-2.5 w-full text-sm rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
                             placeholder="Opisz nieco dokładniej"></textarea>
                     </div>
@@ -501,8 +506,8 @@
                     <li>Krosno, województwo podkarpackie</li>
                     <li>Telefon kontaktowy: <a href="tel:+48725454857" class="link" aria-label="+48 123 123
                         123">+48 725 454 857</a></li>
-                    <li>Adres email: <a href="mailto:adrian.jasi@interia.eu" class="link"
-                            aria-label="adrian.jasi@interia.eu">adrianjasi@interia.eu</a>
+                    <li>Adres email: <a href="mailto:adrianjasi@interia.eu" class="link"
+                            aria-label="adrianjasi@interia.eu">adrianjasi@interia.eu</a>
                     </li>
                 </ul>
             </div>
@@ -518,7 +523,7 @@
                 <ul class="text-white flex flex-col justify-between">
                     <li class="font-bold">Podstrony</li>
                     <li><a href="realisations.php" class="link">Nasze realizacje</a></li>
-                    <li><a href="#" class="link">Polityka prywatnosci</a></li>
+                    <li><a href="policy.html" class="link">Polityka prywatnosci</a></li>
                 </ul>
             </div>
         </div>

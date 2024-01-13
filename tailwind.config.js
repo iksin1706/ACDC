@@ -3,6 +3,7 @@ module.exports = {
   mode: 'jit',
   content: [
     "./build/**/*.html",
+    "./build/**/*.php",
     './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
   theme: {
