@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="realisations.css">
     <link rel="stylesheet" href="swiper-bundle.min.css" />
     <link rel="stylesheet" href="minimal.css">
-    <style>
-
-    </style>
 </head>
 
 <body class="light-gradient-back min-h-screen bg-gray-300">
@@ -94,18 +91,18 @@
                     id="mobile-menu-2">
                     <ul class="flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
-                            <a href="#about"
+                            <a href="../#about"
                                 class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-200 lg:hover:text-white hover:bg-gray-700 hover:text-white lg:hover:bg-transparent border-gray-700">O
                                 nas
                             </a>
                         </li>
                         <li>
-                            <a href="#services"
+                            <a href="../#services"
                                 class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-200 lg:hover:text-white hover:bg-gray-700 hover:text-white lg:hover:bg-transparent border-gray-700">Nasze
                                 usługi</a>
                         </li>
                         <li>
-                            <a href="realisations.html"
+                            <a href="realisations.php"
                                 class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-200 lg:hover:text-white hover:bg-gray-700 hover:text-white lg:hover:bg-transparent border-gray-700">Realizacje
                             </a>
                         </li>

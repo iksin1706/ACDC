@@ -13,7 +13,16 @@ const animateLight = () => {
 if(window.scrollY>700) {
   animateLight();
 }
+function checkForHash() {
+  var url = window.location.href;
 
+  if (url.includes("#")) {
+    animateLight();
+  } else {
+  }
+}
+
+checkForHash();
 
 const sliderLabels = [
   { first: "Instalacje", second: "elektryczne" },
@@ -57,7 +66,7 @@ const changeText = (first, second) => {
   t2.innerHTML = second;
 
   header.classList.remove("animate");
-  
+
   header.offsetWidth;
 
   requestAnimationFrame(() => {
@@ -114,7 +123,7 @@ targets.forEach((target) => {
   observer.observe(target);
 });
 
-const stats = [150, 8, 100]
+const stats = [228, 8, 100]
 
 
 var elements = document.querySelectorAll('.stat');
