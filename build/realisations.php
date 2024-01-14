@@ -68,7 +68,7 @@
                     <span class="self-center text-xl font-semibold whitespace-nowrap text-white">AC DC</span>
                 </a>
                 <div class="flex items-center lg:order-2">
-                    <a href="#contact"
+                    <a href="../#contact"
                         class="text-white bg-orange-500 text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 hover:bg-gray-700 focus:outline-none focus:ring-gray-800">Kontakt</a>
                     <button data-collapse-toggle="mobile-menu-2" type="button"
                         class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
@@ -258,9 +258,9 @@
             <div class="md:ml-20  h-full mt-5 md:mt-20">
                 <ul class="text-white flex flex-col justify-between">
                     <li class="font-bold">Menu</li>
-                    <li><a href="#about" class="link">O nas</a></li>
-                    <li><a href="#services" class="link">Nasze usługi</a></li>
-                    <li><a href="#contact" class="link">Kontakt</a></li>
+                    <li><a href="../#about" class="link">O nas</a></li>
+                    <li><a href="../#services" class="link">Nasze usługi</a></li>
+                    <li><a href="../#contact" class="link">Kontakt</a></li>
                 </ul>
             </div>
             <div class="md:ml-20  h-full mt-5 md:mt-20">
