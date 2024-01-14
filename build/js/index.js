@@ -1,39 +1,13 @@
 
-const animateLight = () => {
-  document.querySelector('#about').classList.add("animated");
-  document.querySelector('.light-gradient').classList.add('animated');
-  document.querySelector('.light-gradient').classList.add('instant');
-  document.querySelector('#about').classList.add('instant');
-  document.querySelector('.composition').classList.add('animated');
-  document.querySelectorAll('.composition__photo').forEach((element)=>{
-    element.classList.add('instant');
-  })
-}
-
-if(window.scrollY>700) {
-  animateLight();
-}
-function checkForHash() {
-  var url = window.location.href;
-
-  if (url.includes("#")) {
-    animateLight();
-  } else {
-  }
-}
-
-checkForHash();
-
-const sliderLabels = [
-  { first: "Instalacje", second: "elektryczne" },
-  { first: "Pomiary", second: "i dozór" },
-  { first: "Monitoring", second: "CCTV" },
-  { first: "Instalacje", second: "SAT" },
-  { first: "Systemy", second: "Alarmowe" },
-  { first: "Instalacje", second: "Odgromowe" },
-]
-
+const targets = document.querySelectorAll(".animation-trigger")
+const about = document.querySelector('#about');
+const lightGradient = document.querySelector('.light-gradient');
+const composition = document.querySelector('.composition');
+const compositionsPhotos = document.querySelectorAll('.composition__photo');
+const statsElements = document.querySelectorAll('.stat');
 const swiper = document.querySelector('.mySwiper');
+const contactButton = document.querySelector('#contact-button');
+
 const heroSwiper = new Swiper(swiper, {
   direction: 'horizontal',
   speed: '1000',
@@ -52,29 +26,18 @@ const heroSwiper = new Swiper(swiper, {
   },
 });
 
-heroSwiper.on('slideChange', function (e) {
-  changeText(sliderLabels[heroSwiper.realIndex].first, sliderLabels[heroSwiper.realIndex].second)
-});
+const sliderLabels = [
+  { first: "Instalacje", second: "elektryczne" },
+  { first: "Pomiary", second: "i dozór" },
+  { first: "Monitoring", second: "CCTV" },
+  { first: "Instalacje", second: "SAT" },
+  { first: "Systemy", second: "Alarmowe" },
+  { first: "Instalacje", second: "Odgromowe" },
+]
 
-const changeText = (first, second) => {
-  const t1 = document.querySelector(".hero-header__first");
-  const t2 = document.querySelector(".hero-header__second");
+const stats = [228, 8, 100]
 
-  const header = document.querySelector(".hero-header");
-
-  t1.innerHTML = first;
-  t2.innerHTML = second;
-
-  header.classList.remove("animate");
-
-  header.offsetWidth;
-
-  requestAnimationFrame(() => {
-    header.classList.add("animate");
-  });
-}
-
-var serviceSwiper = new Swiper(".service-swiper", {
+const serviceSwiper = new Swiper(".service-swiper", {
   slidesPerView: 1,
   spaceBetween: 20,
 
@@ -102,7 +65,41 @@ var serviceSwiper = new Swiper(".service-swiper", {
   },
 });
 
-const targets = document.querySelectorAll(".animation-trigger")
+const checkForHash = () => {
+  let url = window.location.href;
+
+  if (url.includes("#")) {
+    animateLight();
+  } else {
+  }
+}
+
+const changeText = (first, second) => {
+  const t1 = document.querySelector(".hero-header__first");
+  const t2 = document.querySelector(".hero-header__second");
+
+  const header = document.querySelector(".hero-header");
+
+  t1.innerHTML = first;
+  t2.innerHTML = second;
+
+  header.classList.remove("animate");
+
+  header.offsetWidth;
+
+  requestAnimationFrame(() => {
+    header.classList.add("animate");
+  });
+}
+
+const animateLight = () => {
+  about.classList.add("animated", 'instant');
+  lightGradient.classList.add('animated', 'instant');
+  composition.classList.add('animated');
+  compositionsPhotos.forEach((element) => {
+    element.classList.add('instant');
+  })
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -118,17 +115,22 @@ const observer = new IntersectionObserver((entries) => {
   rootMargin: '0px 0px -50% 0px',
   threshold: 0.5
 });
-
 targets.forEach((target) => {
   observer.observe(target);
 });
 
-const stats = [228, 8, 100]
+window.addEventListener('load',()=>{
+  if (window.scrollY > 700) {
+    animateLight();
+  }
+  checkForHash();
+})
 
+heroSwiper.on('slideChange', function (e) {
+  changeText(sliderLabels[heroSwiper.realIndex].first, sliderLabels[heroSwiper.realIndex].second)
+});
 
-var elements = document.querySelectorAll('.stat');
-
-elements.forEach((el, index) => {
+statsElements.forEach((el, index) => {
   const od = new Odometer({
     el: el,
     value: 0,
@@ -139,16 +141,6 @@ elements.forEach((el, index) => {
   od.update(stats[index]);
 })
 
-const toggleButton = document.querySelector('[data-collapse-toggle="mobile-menu-2"]');
-
-const mobileMenu = document.getElementById('mobile-menu-2');
-
-toggleButton.addEventListener('click', function () {
-  mobileMenu.classList.toggle('hidden');
-  const expanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';
-  toggleButton.setAttribute('aria-expanded', expanded);
-});
-
 window.addEventListener("load", async () => {
   const preloader = document.querySelector(".preloader");
   preloader.classList.add("preloader--hidden");
@@ -156,6 +148,6 @@ window.addEventListener("load", async () => {
   preloader.style.display = "none";
 });
 
-document.querySelector('#contact-button').addEventListener('click',() => {
+contactButton.addEventListener('click', () => {
   animateLight();
 })
